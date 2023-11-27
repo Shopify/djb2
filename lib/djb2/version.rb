@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-module DjbHash2
+module DJB2
   VERSION = "0.1.0"
 end

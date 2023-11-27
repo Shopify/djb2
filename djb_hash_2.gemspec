@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require_relative "lib/djb_hash_2/version"
+require_relative "lib/djb2/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "djb_hash_2"
-  spec.version = DjbHash2::VERSION
+  spec.name = "djb2"
+  spec.version = DJB2::VERSION
   spec.authors = ["Jean Boussier"]
   spec.email = ["jean.boussier@gmail.com"]
 
-  spec.summary = "djb_hash_2 implementation"
+  spec.summary = "djb2 implementation"
   # spec.description = "TODO: Write a longer description or delete this line."
   # spec.homepage = "TODO: Put your gem's website or public repo URL here."
   spec.license = "MIT"
@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-  spec.extensions = ["ext/djb_hash_2/extconf.rb"]
+  spec.extensions = ["ext/djb2/extconf.rb"]
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"

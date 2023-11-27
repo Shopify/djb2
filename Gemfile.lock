@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    djb_hash_2 (0.1.0)
+    djb2 (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -41,7 +41,7 @@ PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
-  djb_hash_2!
+  djb2!
   minitest (~> 5.0)
   rake (~> 13.0)
   rake-compiler

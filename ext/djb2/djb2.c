@@ -1,6 +1,6 @@
 #include "ruby.h"
 
-VALUE rb_mDjbHash2;
+VALUE rb_mDJB2;
 
 uint64_t
 djb_hash_2(const char *string, long length)
@@ -21,8 +21,8 @@ rb_djb_hash_2(VALUE self, VALUE str)
 }
 
 RUBY_FUNC_EXPORTED void
-Init_djb_hash_2(void)
+Init_djb2(void)
 {
-  rb_mDjbHash2 = rb_define_module("DjbHash2");
-  rb_define_singleton_method(rb_mDjbHash2, "digest", rb_djb_hash_2, 1);
+  rb_mDJB2 = rb_define_module("DJB2");
+  rb_define_singleton_method(rb_mDJB2, "digest", rb_djb_hash_2, 1);
 }

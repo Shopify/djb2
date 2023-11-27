@@ -17,10 +17,10 @@ require "rake/extensiontask"
 
 task build: :compile
 
-GEMSPEC = Gem::Specification.load("djb_hash_2.gemspec")
+GEMSPEC = Gem::Specification.load("djb2.gemspec")
 
-Rake::ExtensionTask.new("djb_hash_2", GEMSPEC) do |ext|
-  ext.lib_dir = "lib/djb_hash_2"
+Rake::ExtensionTask.new("djb2", GEMSPEC) do |ext|
+  ext.lib_dir = "lib/djb2"
 end
 
 task default: %i[clobber compile test rubocop]

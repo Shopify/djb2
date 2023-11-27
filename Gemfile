@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in djb_hash_2.gemspec
+# Specify your gem's dependencies in djb2.gemspec
 gemspec
 
 gem "rake", "~> 13.0"

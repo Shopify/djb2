@@ -7,4 +7,4 @@ require "mkmf"
 # selectively, or entirely remove this flag.
 append_cflags("-fvisibility=hidden")
 
-create_makefile("djb_hash_2/djb_hash_2")
+create_makefile("djb2/djb2")
