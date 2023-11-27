@@ -9,10 +9,6 @@ Rake::TestTask.new(:test) do |t|
   t.test_files = FileList["test/**/test_*.rb"]
 end
 
-require "rubocop/rake_task"
-
-RuboCop::RakeTask.new
-
 require "rake/extensiontask"
 
 task build: :compile
@@ -23,4 +19,4 @@ Rake::ExtensionTask.new("djb2", GEMSPEC) do |ext|
   ext.lib_dir = "lib/djb2"
 end
 
-task default: %i[clobber compile test rubocop]
+task default: %i[clobber compile test]
