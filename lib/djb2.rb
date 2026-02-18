@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "djb2/version"
-require_relative "djb2/djb2"
+require "djb2/djb2"
 
 module DJB2
   class Error < StandardError; end
