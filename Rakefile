@@ -9,14 +9,4 @@ Rake::TestTask.new(:test) do |t|
   t.test_files = FileList["test/**/test_*.rb"]
 end
 
-require "rake/extensiontask"
-
-task build: :compile
-
-GEMSPEC = Gem::Specification.load("djb2.gemspec")
-
-Rake::ExtensionTask.new("djb2", GEMSPEC) do |ext|
-  ext.lib_dir = "lib/djb2"
-end
-
-task default: %i[clobber compile test]
+task default: :test

@@ -1,6 +1,6 @@
 # DJB2
 
-Native djb2 hash implementation
+Pure Ruby djb2 hash implementation, optimized for YJIT.
 
 ## Installation
 
