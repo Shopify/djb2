@@ -8,8 +8,6 @@ GEM
   specs:
     minitest (5.27.0)
     rake (13.3.1)
-    rake-compiler (1.2.5)
-      rake
 
 PLATFORMS
   arm64-darwin
@@ -19,7 +17,6 @@ DEPENDENCIES
   djb2!
   minitest (~> 5.0)
   rake (~> 13.0)
-  rake-compiler
 
 BUNDLED WITH
    2.4.21
